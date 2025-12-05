@@ -74,8 +74,10 @@ async function addUser()
   document.querySelector("#username").value='';
   document.querySelector("#avatar").value=' ';
 }
+
 let Uid
 async function editModal(id)
+     
 {
   let data= await fetch(`https://611f26309771bf001785c71e.mockapi.io/users/${id}`);
   user=await data.json()
